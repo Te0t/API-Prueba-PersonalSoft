@@ -23,4 +23,36 @@ public class Poliza {
     private String direccionResidencia;
     private int modelo;
     private String placa;
+
+    public Poliza(Integer idPoliza, String nombre, Integer idCliente, Date fechaNacimiento, Date fechaPoliza, String coberturaPoliza, String nombrePlanPoliza, String ciudadResidencia, String direccionResidencia, int modelo, String placa) {
+        this.idPoliza = idPoliza;
+        this.nombre = nombre;
+        this.idCliente = idCliente;
+        this.fechaNacimiento = fechaNacimiento;
+        this.fechaPoliza = fechaPoliza;
+        this.coberturaPoliza = coberturaPoliza;
+        this.nombrePlanPoliza = nombrePlanPoliza;
+        this.ciudadResidencia = ciudadResidencia;
+        this.direccionResidencia = direccionResidencia;
+        this.modelo = modelo;
+        this.placa = placa;
+    }
+
+    public Poliza(String nombre, Integer idCliente, Date fechaNacimiento, Date fechaPoliza, String coberturaPoliza, String nombrePlanPoliza, String ciudadResidencia, String direccionResidencia, int modelo, String placa) {
+
+        this.nombre = nombre;
+        this.idCliente = idCliente;
+        this.fechaNacimiento = fechaNacimiento;
+        this.fechaPoliza = fechaPoliza;
+        this.coberturaPoliza = coberturaPoliza;
+        this.nombrePlanPoliza = nombrePlanPoliza;
+        this.ciudadResidencia = ciudadResidencia;
+        this.direccionResidencia = direccionResidencia;
+        this.modelo = modelo;
+        this.placa = placa;
+    }
+
+    public Poliza() {
+        super();
+    }
 }
