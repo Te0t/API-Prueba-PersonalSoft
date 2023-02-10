@@ -55,4 +55,92 @@ public class Poliza {
     public Poliza() {
         super();
     }
+
+    public Integer getIdPoliza() {
+        return idPoliza;
+    }
+
+    public void setIdPoliza(Integer idPoliza) {
+        this.idPoliza = idPoliza;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Integer getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(Integer idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public Date getFechaPoliza() {
+        return fechaPoliza;
+    }
+
+    public void setFechaPoliza(Date fechaPoliza) {
+        this.fechaPoliza = fechaPoliza;
+    }
+
+    public String getCoberturaPoliza() {
+        return coberturaPoliza;
+    }
+
+    public void setCoberturaPoliza(String coberturaPoliza) {
+        this.coberturaPoliza = coberturaPoliza;
+    }
+
+    public String getNombrePlanPoliza() {
+        return nombrePlanPoliza;
+    }
+
+    public void setNombrePlanPoliza(String nombrePlanPoliza) {
+        this.nombrePlanPoliza = nombrePlanPoliza;
+    }
+
+    public String getCiudadResidencia() {
+        return ciudadResidencia;
+    }
+
+    public void setCiudadResidencia(String ciudadResidencia) {
+        this.ciudadResidencia = ciudadResidencia;
+    }
+
+    public String getDireccionResidencia() {
+        return direccionResidencia;
+    }
+
+    public void setDireccionResidencia(String direccionResidencia) {
+        this.direccionResidencia = direccionResidencia;
+    }
+
+    public int getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(int modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
 }
