@@ -5,6 +5,7 @@ import com.polizas.pruebaApiPersonalSoft.service.PolizaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,6 +16,13 @@ public class PolizaController {
 
     @Autowired
     private PolizaService service;
+
+    @GetMapping("/")
+    public String verPaginaInicio(Model model){
+        List<Poliza> listar = service.listar();
+        model.addAttribute("listar", listar);
+        return "index";
+    }
 
     @GetMapping("/polizas")
     public List<Poliza> listarPolizas(){

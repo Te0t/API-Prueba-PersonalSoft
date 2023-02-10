@@ -13,6 +13,8 @@ public class PolizaService {
     @Autowired
     private PolizaRepository repository;
 
+    public List<Poliza> listar(){ return repository.findAll(); }
+
     public List<Poliza> listarPolizas(){
         return repository.findAll();
     }
@@ -28,4 +30,5 @@ public class PolizaService {
     public void eliminarPolizas(Integer idPoliza){
         repository.deleteById(idPoliza);
     }
+
 }
