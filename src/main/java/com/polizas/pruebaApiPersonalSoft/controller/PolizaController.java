@@ -17,6 +17,12 @@ public class PolizaController {
     @Autowired
     private PolizaService service;
 
+    @RequestMapping("/hola")
+    public String hola(Model modelo) {
+        modelo.addAttribute("mensaje","hola desde thymeleaf");
+        return "hola";
+    }
+
     @GetMapping("/")
     public String verPaginaInicio(Model model){
         List<Poliza> listar = service.listar();
