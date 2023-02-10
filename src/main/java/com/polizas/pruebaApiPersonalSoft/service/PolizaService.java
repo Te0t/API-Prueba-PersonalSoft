@@ -12,9 +12,6 @@ public class PolizaService {
 
     @Autowired
     private PolizaRepository repository;
-
-    public List<Poliza> listar(){ return repository.findAll(); }
-
     public List<Poliza> listarPolizas(){
         return repository.findAll();
     }
@@ -31,4 +28,7 @@ public class PolizaService {
         repository.deleteById(idPoliza);
     }
 
+    public List<Poliza> ListAll(){
+        return repository.findAll();
+    }
 }

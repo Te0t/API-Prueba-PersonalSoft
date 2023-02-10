@@ -7,44 +7,44 @@
 </head>
 <body>
 <h1>Bienvenidos</h1>
-    <div class="container mt-4">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>idPoliza</th>
-                    <th>nombre</th>
-                    <th>idCliente</th>
-                    <th>fechaNacimiento</th>
-                    <th>fechaPoliza</th>
-                    <th>coberturaPoliza</th>
-                    <th>nombrePlanPoliza</th>
-                    <th>ciudadResidencia</th>
-                    <th>direccionResidencia</th>
-                    <th>modelo</th>
-                    <th>placa</th>
-                    <th>tieneInspeccion</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:each="poliza:${polizas}"/>
-                <td>${poliza.idPoliza}</td>
-                <td>${poliza.nombre}</td>
-                <td>${poliza.idCliente}</td>
-                <td>${poliza.fechaNacimiento}</td>
-                <td>${poliza.fechaPoliza}</td>
-                <td>${poliza.coberturaPoliza}</td>
-                <td>${poliza.nombrePlanPoliza}</td>
-                <td>${poliza.ciudadResidencia}</td>
-                <td>${poliza.direccionResidencia}</td>
-                <td>${poliza.modelo}</td>
-                <td>${poliza.placa}</td>
-                <td>${poliza.tieneInspeccion}</td>
-                <td>
-                    <a class="btn btn-warning">Editar</a>
-                    <a class="btn btn-danger">Eliminar</a>
-                </td>
-            </tbody>
-        </table>
-    </div>
+<div class="container mt-4">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>idPoliza</th>
+            <th>nombre</th>
+            <th>idCliente</th>
+            <th>fechaNacimiento</th>
+            <th>fechaPoliza</th>
+            <th>coberturaPoliza</th>
+            <th>nombrePlanPoliza</th>
+            <th>ciudadResidencia</th>
+            <th>direccionResidencia</th>
+            <th>modelo</th>
+            <th>placa</th>
+            <th>tieneInspeccion</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="poliza:${polizas}"/>
+        <td>${poliza.idPoliza}</td>
+        <td>${poliza.nombre}</td>
+        <td>${poliza.idCliente}</td>
+        <td>${poliza.fechaNacimiento}</td>
+        <td>${poliza.fechaPoliza}</td>
+        <td>${poliza.coberturaPoliza}</td>
+        <td>${poliza.nombrePlanPoliza}</td>
+        <td>${poliza.ciudadResidencia}</td>
+        <td>${poliza.direccionResidencia}</td>
+        <td>${poliza.modelo}</td>
+        <td>${poliza.placa}</td>
+        <td>${poliza.tieneInspeccion}</td>
+        <td>
+            <a class="btn btn-warning">Editar</a>
+            <a class="btn btn-danger">Eliminar</a>
+        </td>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
